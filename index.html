@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+		<link rel="stylesheet" href="./index.css" type="text/css">
+		<script type="text/javascript" src="./index.js"></script>
+		<script type="text/javascript" src="./jquery-3.5.1.min.js"></script>
+		<title>NPS計算サイト</title>
+	</head>
+	<body>
+		<h1>NPS計算サイト</h1>
+		<ul>
+			<li class="bad">0: <input type="text" id="input0">名</li>
+			<li class="bad">1: <input type="text" id="input1">名</li>
+			<li class="bad">2: <input type="text" id="input2">名</li>
+			<li class="bad">3: <input type="text" id="input3">名</li>
+			<li class="bad">4: <input type="text" id="input4">名</li>
+			<li class="bad">5: <input type="text" id="input5">名</li>
+			<li class="bad">6: <input type="text" id="input6">名</li>
+			<li class="normal">7: <input type="text" id="input7">名</li>
+			<li class="normal">8: <input type="text" id="input8">名</li>
+			<li class="good">9: <input type="text" id="input9">名</li>
+			<li class="good">10: <input type="text" id="input10">名</li>
+		</ul>
+		<div><button onclick="calc();">計算</button></div>
+		<div>
+			<p>合計人数: <span id="total"></span>名<p>
+			<p>推奨者割合: <span id="goodPercent"></span>名</p>
+			<p>批判者割合: <span id="badPercent"></span>名</p>
+			<p class="result">NPS: <span id="result"></span></p>
+		</div>
+
+</html>
